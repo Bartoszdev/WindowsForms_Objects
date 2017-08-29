@@ -16,5 +16,11 @@ namespace WindowsForms_Objects
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int bobek = Talker.BlahBlahBlah(textBox1.Text, (int)numericUpDown1.Value);
+            MessageBox.Show("Długość wiadomości to " + bobek);
+        }
     }
 }
